@@ -178,18 +178,18 @@ int main() {
 Thus the program to count total number of positive elements in an array has been executed successfully.
 
 
-# EX -15 - Replace All Even Elements With '1' In One Dimensional Array
+# EX -15 - Replace All Even Elements With 'E' In One Dimensional Array
 ## Aim:
-To write a C program to replace all odd elements with '1' in one dimensional array
+To write a C program to replace all odd elements with 'E' in one dimensional array
 
 ## Algorithm:
 1.	Input the array:
   Read the size of the array.
   Input the elements of the array.
 2.	Iterate through the array:
- 	For each element of the array, check if the element is odd (i.e., if the element modulo 2 equals 1).
-3.	Replace even elements with '1':
-     If an element is odd, replace that element with the character '1'.
+ 	For each element of the array, check if the element is even (i.e., if the element modulo 2 equals 0).
+3.	Replace even elements with 'E':
+     If an element is even, replace that element with the character 'E'.
 4.	Output the updated array:
  Print the updated array after replacements.
 
@@ -228,7 +228,7 @@ int main() {
 ![WhatsApp Image 2025-04-27 at 15 09 19_29145594](https://github.com/user-attachments/assets/8069572d-0579-4e34-acf8-50030e3aea5f)
 
 ## Result:
-Thus, the program to replace all odd elements with '1' in one dimensional array was verified successfully.
+Thus, the program to replace all odd elements with 'E' in one dimensional array was verified successfully.
 
 
 
