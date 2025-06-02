@@ -127,7 +127,7 @@ int main()
 
 
 ## RESULT
-Thus the program to read n elements as input and print the last second element of the array has been executed successfully.
+Thus the program to read n elements as input and print the last  element of the array has been executed successfully.
  
  
 
