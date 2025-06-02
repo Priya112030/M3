@@ -51,7 +51,7 @@ Thus the program to prepare EMI calculator using function without return type wi
  
 ## EX-12-FIBONACCI-SERIES
 ## AIM
-To write a C program to generate the Fibonacci series for the value 8.
+To write a C program to generate the Fibonacci series for the value 6.
 
 ## ALGORITHM
 1.	Start the program.
@@ -67,8 +67,8 @@ To write a C program to generate the Fibonacci series for the value 8.
 #include<stdio.h>    
 int main()    
 {    
- int n1=0,n2=1,n3,i,number=8;    
-
+ int n1=0,n2=1,n3,i,number;    
+ scanf("%d",&number);
  
  printf("%d %d",n1,n2);
 i=2;
@@ -85,42 +85,46 @@ i=2;
 ```
 
 ## OUTPUT
-![image](https://github.com/user-attachments/assets/baabc72a-7ce0-48bb-b804-f952b14dbbf6)
+![Screenshot 2025-04-27 150452](https://github.com/user-attachments/assets/cdc27f77-0a25-4bf3-8a0e-7ef322435607)
+
 
 ## RESULT
-Thus the program to generate the Fibonacci series for the value 8 has been executed successfully.
+Thus the program to generate the Fibonacci series for the value 6 has been executed successfully.
  
  
 
 
 # EX-13-ONE-DIMENSIONAL-ARRAY
 ## AIM
-To write a C program to read n elements as input and print the last second element of the array.
+To write a C program to read n elements as input and print the last  element of the array.
 
 ## ALGORITHM
 1.	Start the program.
 2.	Read a variable.
 3.	Read the array values n number of times.
-4.	Print the last second element.
+4.	Print the last  element.
 5.	Stop the program.
 
 ## PROGRAM
 ```
-#include <stdio.h>
-
-int main() {
-    int n;
-    scanf("%d", &n);
+#include<stdio.h>
+int main()
+{
+    int n,i;
+    scanf("%d",&n);
     int arr[n];
-    for (int i = 0; i < n; i++) scanf("%d", &arr[i]);
-    if (n > 1) printf("%d\n", arr[n - 2]);
-    else printf("Not enough elements\n");
-    return 0;
+    for (i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    if (n>0) printf("%d\n",arr[n-1]);
+    else printf(" ");   
 }
 ```
 
 ## OUTPUT
-![image](https://github.com/user-attachments/assets/29ff6563-b666-420a-ab19-73de0d8a8324)
+![Screenshot 2025-04-27 150543](https://github.com/user-attachments/assets/34851039-ad90-4502-b85c-dc0c5777a8a6)
+
 
 ## RESULT
 Thus the program to read n elements as input and print the last second element of the array has been executed successfully.
@@ -130,47 +134,41 @@ Thus the program to read n elements as input and print the last second element o
 
 # EX-14-POSITIVE-ARRAY-ELEMENTS
 ## AIM
-To write a C Program to count total number of negative elements in an array.
+To write a C Program to count total number of positive elements in an array.
 
 ## ALGORITHM
 1.	Start the program.
 2.	Read a variable.
 3.	Read the array values n number of times.
-4.	If the array value can be less 0 ,then increment count by 1.
+4.	If the array value can be divided by 2 then increment count by 1.
 5.	Display result.
 6.	Stop the program.
 
 ## PROGRAM
 ```
-#include <stdio.h>
- 
- 
+#include<stdio.h>
 int main()
 {
-    int a[100],i,n,c=0;
-    scanf("%d", &n);
-    for(i=0; i<n; i++)
+    int n,i;
+    scanf("%d",&n);
+    int arr[n],count_pos=0;
+    for (i=0;i<n;i++)
     {
-        scanf("%d", &a[i]);
+        scanf("%d",&arr[i]);
+        if (arr[i]>0) count_pos++;
+        
     }
-    for(i=0; i<n; i++)
-    {
-         
-        if(a[i] < 0)
-         c++;
-    }
-         printf("count  of negative numbers  in array: %d",c);
- 
- 
-    return 0;
+    printf("count  of positive numbers  in array: %d\n",count_pos);
+    
 }
 ```
 
 ## OUTPUT
-![image](https://github.com/user-attachments/assets/ef7abfb7-9594-4fa7-a309-04217ecc3394)
+![Screenshot 2025-04-27 150632](https://github.com/user-attachments/assets/cfca22c6-72b5-45c1-bfa6-52d15c754121)
+
 
 ## RESULT
-Thus the program to count total number of negative elements in an array has been executed successfully.
+Thus the program to count total number of positive elements in an array has been executed successfully.
 
 
 # EX -15 - Replace All Even Elements With '1' In One Dimensional Array
