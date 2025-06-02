@@ -146,25 +146,32 @@ To write a C Program to count total number of positive elements in an array.
 
 ## PROGRAM
 ```
-#include<stdio.h>
-int main()
-{
-    int n,i;
-    scanf("%d",&n);
-    int arr[n],count_pos=0;
-    for (i=0;i<n;i++)
-    {
-        scanf("%d",&arr[i]);
-        if (arr[i]>0) count_pos++;
-        
+#include <stdio.h>
+
+int main() {
+    int n, i, count = 0;
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
+
+    int arr[n];
+    printf("Enter %d elements:\n", n);
+    for (i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
-    printf("count  of positive numbers  in array: %d\n",count_pos);
-    
+    for (i = 0; i < n; i++) {
+        if (arr[i] > 0) {
+            count++;
+        }
+    }
+    printf("Total number of positive elements: %d\n", count);
+
+    return 0;
 }
 ```
 
 ## OUTPUT
-![Screenshot 2025-04-27 150632](https://github.com/user-attachments/assets/cfca22c6-72b5-45c1-bfa6-52d15c754121)
+![image](https://github.com/user-attachments/assets/19b4585f-7b93-4f89-b648-92be797fcd68)
+
 
 
 ## RESULT
@@ -188,29 +195,37 @@ To write a C program to replace all odd elements with '1' in one dimensional arr
 
 ## Program:
 ```
-# include <stdio.h>
-int main()
-{
-    int arr[100],n,i;
-    scanf("%d",&n);
-    for(i=0;i<n;i++){
-        scanf("%d",&arr[i]);
+#include <stdio.h>
+
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    int arr[n];
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
-    for(i=0;i<n;i++){
-        if(arr[i]%2!=0){
-            arr[i]=1;
+
+    for (int i = 0; i < n; i++) {
+        if (arr[i] % 2 == 0) {
+            arr[i] = 'E';  // Replacing even numbers with 'E'
         }
     }
-    for(i=0;i<n;i++){
-        printf("%d ",arr[i]);
+
+    for (int i = 0; i < n; i++) {
+        if (arr[i] == 'E') {
+            printf("E ");
+        } else {
+            printf("%d ", arr[i]);
+        }
     }
-    printf("\n");
+
     return 0;
 }
 ```
 
 ## Output:
-![image](https://github.com/user-attachments/assets/0b8287bd-fa08-4605-b01d-5077a8047b38)
+![WhatsApp Image 2025-04-27 at 15 09 19_29145594](https://github.com/user-attachments/assets/8069572d-0579-4e34-acf8-50030e3aea5f)
 
 ## Result:
 Thus, the program to replace all odd elements with '1' in one dimensional array was verified successfully.
